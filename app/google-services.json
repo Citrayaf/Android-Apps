@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "320916848964",
+    "firebase_url": "https://ikanfirebase.firebaseio.com",
+    "project_id": "ikanfirebase",
+    "storage_bucket": "ikanfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320916848964:android:085d20bf4edad0d2",
+        "android_client_info": {
+          "package_name": "com.example.afafadhlika.ikan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320916848964-cj2pjjbunenjdldgs9fqalgfabooqivs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.afafadhlika.ikan",
+            "certificate_hash": "0827a466dcefdaea795520a94ccefd67a8fce072"
+          }
+        },
+        {
+          "client_id": "320916848964-ibrbvu7udq4f4d1q3v6vd1tp8fl4qje6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKTRhErCsK_ONMpY0yKf9C2vCRACzCvk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320916848964-ibrbvu7udq4f4d1q3v6vd1tp8fl4qje6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sc_daftar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/header_bg_red"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:background="@drawable/header_box_red">
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/beri_pakan_heading"
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="106dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:text="Panen"
+                android:textColor="#ffffff"
+                android:lineHeight="70dp"
+                android:textSize="64dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_bg_red"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/first_field_group">
+
+                <TextView
+                    android:id="@+id/panen_form_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berat Ikan Total"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/source_sans_pro_semibold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/panen_form_heading"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/berat_ikan_total_textfield"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_text_field"
+                        android:hint="0 kg"
+                        android:textSize="24dp"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:inputType="number"/>
+
+                    <Button
+                        android:id="@+id/btn_clear_textfield"
+                        android:layout_width="70dp"
+                        android:layout_height="67dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_alignParentRight="true"
+                        android:text="C"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/rounded_button3"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_field_group"
+                android:layout_below="@+id/first_field_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:id="@+id/panen_form_heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Ikan Dipanen"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/source_sans_pro_semibold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/panen_form_heading2"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/jumlah_ikan_dipanen_textfield"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_text_field"
+                        android:layout_below="@id/spinner"
+                        android:hint="0 ekor"
+                        android:textSize="24dp"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:inputType="number"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_below="@+id/second_field_group"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Panen"
+                android:id="@+id/btn_panen"
+                android:textAllCaps="false"
+                android:fontFamily="@font/source_sans_pro"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/rounded_button"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

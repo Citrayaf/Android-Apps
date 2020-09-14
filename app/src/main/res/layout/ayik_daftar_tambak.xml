@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sc_daftar_tambak">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/header_bg_red"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:background="@drawable/header_box_red">
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/daftar_tambak_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:text="Registrasi Tambak"
+                android:textColor="#ffffff"
+                android:lineHeight="70dp"
+                android:textSize="64dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_bg_red"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/first_field_group">
+
+                <TextView
+                    android:id="@+id/daftar_form_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profil Tambak"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/source_sans_pro_semibold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/daftar_form_heading"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/nama_tambak_textfield"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_text_field"
+                        android:hint="Nama Tambak"
+                        android:textSize="24dp"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/luas_tambak_textfield"
+                        android:layout_below="@id/nama_tambak_textfield"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_text_field"
+                        android:hint="Luas Tambak (m2)"
+                        android:textSize="24dp"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:inputType="number"
+                        />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_field_group"
+                android:layout_below="@+id/first_field_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:id="@+id/daftar_form_heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Isi Tambak"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/source_sans_pro_semibold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/daftar_form_heading2"
+                    android:layout_marginTop="8dp">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textviewpilik"
+                        android:layout_centerHorizontal="true"
+                        android:drawSelectorOnTop="true"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="16dp"
+                        android:text="Jenis Ikan..."
+                        android:textSize="24dp"
+                        android:visibility="visible" />
+                    <EditText
+                        android:id="@+id/jumlah_ikan_textfield"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_text_field"
+                        android:layout_below="@id/spinner"
+                        android:hint="Jumlah Ikan"
+                        android:textSize="24dp"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:id="@+id/umur_ikan_textfield"
+                        android:layout_below="@id/jumlah_ikan_textfield"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_text_field"
+                        android:hint="Umur Ikan (hari)"
+                        android:textSize="24dp"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:id="@+id/berat_benih_textfield"
+                        android:layout_below="@id/umur_ikan_textfield"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_text_field"
+                        android:hint="Berat Benih (kg)"
+                        android:textSize="24dp"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:inputType="number"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_below="@+id/second_field_group"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Daftar"
+                android:id="@+id/btn_daftar_tambak"
+                android:textAllCaps="false"
+                android:fontFamily="@font/source_sans_pro"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/rounded_button"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

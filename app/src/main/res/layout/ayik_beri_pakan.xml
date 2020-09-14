@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sc_daftar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/header_bg_blue"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:background="@drawable/header_box_blue">
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/beri_pakan_heading"
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:text="Beri Pakan"
+                android:textColor="#ffffff"
+                android:lineHeight="70dp"
+                android:textSize="64dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_bg_blue"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/makan_group">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_text_field">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro_light"
+                        android:textSize="26dp"
+                        android:id="@+id/isi"
+                        android:background="@drawable/rounded_text_field"
+                        android:layout_below="@id/luas_tambak_desc2"
+                        android:hint="100kg"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/nama_tambakRL">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tambak A"
+                            android:fontFamily="@font/source_sans_pro_semibold"
+                            android:textSize="24dp"
+                            android:textColor="#333333"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/nama_tambakRL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/luas_tambak_desc1">
+
+                        <TextView
+                            android:id="@+id/nama_tambak2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="300m2"
+                            android:fontFamily="@font/source_sans_pro_light"
+                            android:textSize="24dp"
+                            android:textColor="#333333"/>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/nama_tambakRL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="103dp"
+                        android:id="@+id/luas_tambak_desc2">
+
+                        <TextView
+                            android:id="@+id/nama_tambak3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="300 Ikan"
+                            android:fontFamily="@font/source_sans_pro_light"
+                            android:textSize="24dp"
+                            android:textColor="#333333"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/nama_tambakRL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="199dp"
+                        android:id="@+id/luas_tambak_desc3">
+
+                        <TextView
+                            android:id="@+id/nama_tambak4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 Bulan"
+                            android:fontFamily="@font/source_sans_pro_light"
+                            android:textSize="24dp"
+                            android:textColor="#333333"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@id/isi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="24dp"
+                        android:id="@+id/button_beri_makan">
+
+                        <Button
+                        android:layout_width="match_parent"
+                            android:id="@+id/barum"
+                        android:layout_height="57dp"
+                        android:text="Beri Pakan"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/source_sans_pro"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/rounded_button2_orange"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_slide">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/slideview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slideview"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="20dp"></LinearLayout>
+
+    <Button
+        android:id="@+id/buttonkiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/slideview"
+        android:layout_toLeftOf="@id/dots"
+        android:background="@android:color/transparent"
+        android:text="Button"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonkanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/slideview"
+        android:layout_toRightOf="@id/dots"
+        android:background="@android:color/transparent"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/textmenu"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_weight="1"
+        android:layout_below="@id/dots"
+        android:gravity="center"
+        android:text="MAIN MENU"
+        android:textColor="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonregis"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="REGIS PAKAN"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_below="@id/textmenu"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        />
+
+    <Button
+        android:id="@+id/buttonprogrampakan"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@id/textmenu"
+        android:layout_marginTop="10dp"
+        android:text="BERI PAKAN"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/buttongrafik"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_below="@id/buttonprogrampakan"
+        android:layout_marginTop="10dp"
+        android:text="Grafik"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/buttonpanen"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@id/buttonprogrampakan"
+        android:layout_marginTop="10dp"
+        android:text="PANEN"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/buttonsett"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonprogrampakan"
+        android:layout_centerHorizontal="true"
+        android:padding="35dp"
+        android:text="Setting"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:background="@android:color/transparent"
+        />
+
+</RelativeLayout>

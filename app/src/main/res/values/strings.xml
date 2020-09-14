@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ikan</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_first">first</string>
+    <string name="title_activity_menut">menut</string>
+    <string name="title_activity_regis">regis</string>
+    <string name="title_activity_panen">panen</string>
+    <string name="title_activity_pilihtambak">pilihtambak</string>
+    <string name="title_activity_menu_tambak">menu_tambak</string>
+    <string name="title_activity_bermakan">bermakan</string>
+    <string name="title_activity_gruff">gruff</string>
+    <string name="title_activity_mean">mean</string>
+</resources>

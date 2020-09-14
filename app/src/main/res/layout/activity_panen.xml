@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    >
+
+
+    <TextView
+        android:id="@+id/textViewMpanen"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Menu Panen"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textviewberatikan"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:text="Berat Total Ikan"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewMpanen"
+        />
+
+
+    <Button
+        android:id="@+id/buttonmas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="MASUKKAN"
+        />
+
+    <EditText
+        android:id="@+id/editTextberatikan"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/textviewberatikan"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text=""
+        />
+    <TextView
+        android:id="@+id/unittotik"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:text="kg"
+        android:layout_toRightOf="@id/editTextberatikan"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="45dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@id/textviewberatikan"/>
+
+    <TextView
+        android:id="@+id/textviewjumikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextberatikan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Jumlah Ikan Panen"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/editjumikan"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewjumikan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="    "
+        />
+    <TextView
+        android:id="@+id/unitjumpa"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:text="ekor"
+        android:layout_toRightOf="@id/editjumikan"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="45dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@id/textviewjumikan"/>
+
+
+
+</RelativeLayout>

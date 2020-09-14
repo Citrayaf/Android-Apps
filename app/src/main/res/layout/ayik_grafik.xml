@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sc_daftar_pakan">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/header_bg_orange"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:background="@drawable/header_box_orange">
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/grafik_heading"
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="106dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:text="Grafik"
+                android:textColor="#ffffff"
+                android:lineHeight="70dp"
+                android:textSize="64dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_bg_orange"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/first_field_group">
+
+                <TextView
+                    android:id="@+id/jumlah_ikan_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Ikan"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/source_sans_pro_semibold" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@id/jumlah_ikan_heading"
+                    android:id="@+id/grafik"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_text_field">
+
+                </com.github.mikephil.charting.charts.LineChart>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_field_group"
+                android:layout_below="@+id/first_field_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="48dp">
+
+                <TextView
+                    android:id="@+id/jumlah_pakan_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Pakan Diberi"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/source_sans_pro_semibold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/jumlah_pakan_heading"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/rounded_text_field">
+
+                    <TextView
+                        android:id="@+id/totalmakanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="273dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="21dp"
+                        android:text="tse"
+                        android:textSize="30sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

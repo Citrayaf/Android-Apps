@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    tools:context=".first">
+
+    <TextView
+        android:id="@+id/textviewft"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="First Touch"
+        android:textColor="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/textviewpilik"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Jenis Ikan"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/textviewft"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewpilik"
+        android:layout_centerHorizontal="true"
+        android:drawSelectorOnTop="true"
+        android:text="Jenis Ikan" />
+
+    <TextView
+        android:id="@+id/textviewumur"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Umur Ikan"
+        android:textColor="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinner"
+        android:layout_marginRight="178dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignRight="@id/decrease"/>
+
+    <Button
+        android:id="@+id/decrease"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="decreaseInteger"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/integer_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_below="@id/spinner"
+        android:layout_alignLeft="@id/decrease"
+        android:layout_marginLeft="-25dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/increase"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/integer_number"
+        android:layout_marginRight="25dp"
+        android:layout_below="@id/spinner"
+        android:onClick="increaseInteger"
+        android:layout_marginTop="25dp"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/jumlahikan"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textviewumur"
+        android:layout_marginLeft="30dp"
+        android:text="Jumlah Ikan"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"/>
+
+    <EditText
+        android:id="@+id/jumikan"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/integer_number"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="197dp"
+        android:layout_alignLeft="@id/jumlahikan"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/iluaspetak"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jumikan"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="197dp"
+        android:layout_alignLeft="@id/TLuaspetak"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/TLuaspetak"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/jumlahikan"
+        android:layout_marginLeft="30dp"
+        android:text="Luas Tambak"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:textColorLink="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:textSize="20sp"
+        android:text="START" />
+
+    <TextView
+        android:id="@+id/regis"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Registrasi Tambak"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="18sp" />
+
+</RelativeLayout>
